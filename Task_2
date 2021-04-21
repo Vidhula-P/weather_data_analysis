@@ -1,0 +1,4 @@
+import pandas as pd
+df = pd.read_csv('C:\Anaconda\weatherAUS.csv')
+Avg_MaxTemp= df['MaxTemp'].mean()
+Avg_MinTemp= df['MinTemp'].mean()
