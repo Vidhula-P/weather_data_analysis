@@ -23,6 +23,8 @@ df.dropna(inplace = True, axis=1)
 df.drop('Date', inplace = True, axis =1)
 
 #Level 3
-Loca = input("Enter location to look at data- ")
-data = df[df['Location'] == Loca]
-print(data)
+def location(Loca):
+    data = df[df['Location'] == Loca]
+    return(data)
+find_loca = input("Enter location to look at data- ")
+print(location(find_loca))
